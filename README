@@ -1,0 +1,22 @@
+Demo of using multiple word-clouds and a scatterplot.
+
+Requires `words.json` to be generated.
+
+Sorts ngrams into three word-clouds, according to whether they occur more often
+with one of two (set) n-grams, using straight TF-IDF to determine
+font-size within the cloud.
+
+Alongside, displays a scatterplot of each n-gram according to its two tf-idf scores.
+
+Currently, vastly hardcoded - should add user controls:
+  * cloud definitions (which n-gram defines the cloud)
+  * idf and tf mix ratio for score calculation for each cloud
+  * min/max cloud font-size, log-scale factor
+  * log-scale factor for scatterplot
+  * sector of scatter plot for each cloud
+  * cloud n-gram order (alpha, score descending, etc)
+  * cloud score threshold
+Also needed:
+  * context for each n-gram in cloud (which words drove its attribution to the cloud, score, tf, idf)
+  * context for each point in scatterplot
+  * convert scatterplot to SVG (easier redrawing, mouseover)

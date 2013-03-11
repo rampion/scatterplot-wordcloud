@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <style>
+      .cloud {
+        width: 200px;
+        height: 100%;
+        padding: 5px;
+        margin: 5px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .cloud span {
+        display: inline-block;
+        padding: 1px;
+      }
+      #ab-cloud {
+        background: #fbb;
+      }
+      #mid-cloud {
+        background: #bbb;
+      }
+      #no-cloud {
+        background: #bbf;
+      }
+      #clouds {
+        height: 100%;
+        display: inline-block;
+      }
+      #scatter { 
+        background: #000;
+        display: inline-block;
+      }
+      body > * {
+        vertical-align: top;
+      }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="onload.js"></script>
+  </head>
+  <body>
+    <canvas id="scatter" width="520" height="520"></canvas>
+    <div id="clouds">
+      <div id="ab-cloud" class="cloud"></div>
+      <div id="mid-cloud" class="cloud"></div>
+      <div id="no-cloud" class="cloud"></div>
+    </div>
+  </body>
+</html>
