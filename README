@@ -1,6 +1,6 @@
 Demo of using multiple word-clouds and a scatterplot.
 
-Requires `words.json` to be generated.
+Requires `words.json` to be generated, feel free to use `generate-words.rb` to do so.
 
 Sorts ngrams into three word-clouds, according to whether they occur more often
 with one of two (set) n-grams, using straight TF-IDF to determine
